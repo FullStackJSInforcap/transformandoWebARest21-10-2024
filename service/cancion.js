@@ -41,6 +41,7 @@ const findByArtista = async (artista) => {
             datos: [artistaRecibido[0].dataValues]
         }
     } catch (error) {
+        console.log(error.message);
         return {
             msg: 'Error en el servidor',
             status: 500,
@@ -58,6 +59,7 @@ const insert = async (titulo, artista, tono) => {
             datos: [insertado.dataValues]
         }
     } catch (error) {
+        console.log(error.message);
         return {
             msg: 'Error en el servidor',
             status: 500,
@@ -76,6 +78,7 @@ const update = async (id, titulo, artista, tono) => {
             datos: canciones.map(cancion => cancion.dataValues)
         }
     } catch (error) {
+        console.log(error.message);
         return {
             msg: 'Error en el servidor',
             status: 500,
@@ -94,6 +97,7 @@ const deleteById = async (id) => {
             datos: canciones.map(cancion => cancion.dataValues)
         }
     } catch (error) {
+        console.log(error.message);
         return {
             msg: 'Error en el servidor',
             status: 500,
