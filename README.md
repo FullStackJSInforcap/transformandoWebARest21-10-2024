@@ -4,3 +4,5 @@
 3. servicio
 4. rutas
 5. servidor
+6. controladores
+7. vistas
