@@ -7,14 +7,10 @@ router.get('/', findAllController);
 
 router.get('/findByArtista', findByArtistaController);
 
-router.get('/insert', preInsertController);
-
 router.post('/insert', insertController);
 
-router.get('/update', preUpdateController);
+router.put('/update', updateController);
 
-router.post('/update', updateController);
-
-router.get('/deleteById', deleteByIdController);
+router.delete('/deleteById', deleteByIdController);
 
 module.exports = router;
